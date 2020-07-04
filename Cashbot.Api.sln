@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29324.140
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{81661DCC-9004-41D3-A4C1-5F2D1CD55C9E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{C847A640-0724-4E43-8542-0A62B8F2951B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{EFACFB8D-0E9D-4DCE-9D57-188BE6BC6338}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{096B6610-17A6-4EDB-A720-3F1BFAFD5D8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - UnitTests", "5 - UnitTests", "{6B389491-C4F3-4678-AB87-CA17ED55C454}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Domain", "src\Cashbot.Domain\Cashbot.Domain.csproj", "{4726D18D-BDA8-4737-96CE-59C2A27FCDCF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Domain.Core", "src\Cashbot.Domain.Core\Cashbot.Domain.Core.csproj", "{717A15C4-E884-4D2F-BC77-19E75340C22B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Infra.Data", "src\Cashbot.Infra.Data\Cashbot.Infra.Data.csproj", "{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Infra.IoC", "src\Cashbot.Infra.IoC\Cashbot.Infra.IoC.csproj", "{123569C5-1625-438B-9C1F-03D570FA5CE0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Services.Api", "src\Cashbot.Services.Api\Cashbot.Services.Api.csproj", "{22B35C3C-3528-4776-BC6A-F151FE8CC1A0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cashbot.Application", "src\Cashbot.Application\Cashbot.Application.csproj", "{F362F2FA-B6EB-45EA-9B82-231EDFCC5002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cashbot.Application.UnitTests", "src\Cashbot.Application.UnitTests\Cashbot.Application.UnitTests.csproj", "{1335FE28-7663-4149-9B31-12A49C80084F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4726D18D-BDA8-4737-96CE-59C2A27FCDCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4726D18D-BDA8-4737-96CE-59C2A27FCDCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4726D18D-BDA8-4737-96CE-59C2A27FCDCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4726D18D-BDA8-4737-96CE-59C2A27FCDCF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{717A15C4-E884-4D2F-BC77-19E75340C22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{717A15C4-E884-4D2F-BC77-19E75340C22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{717A15C4-E884-4D2F-BC77-19E75340C22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{717A15C4-E884-4D2F-BC77-19E75340C22B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{123569C5-1625-438B-9C1F-03D570FA5CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{123569C5-1625-438B-9C1F-03D570FA5CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{123569C5-1625-438B-9C1F-03D570FA5CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{123569C5-1625-438B-9C1F-03D570FA5CE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22B35C3C-3528-4776-BC6A-F151FE8CC1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22B35C3C-3528-4776-BC6A-F151FE8CC1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22B35C3C-3528-4776-BC6A-F151FE8CC1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22B35C3C-3528-4776-BC6A-F151FE8CC1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F362F2FA-B6EB-45EA-9B82-231EDFCC5002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F362F2FA-B6EB-45EA-9B82-231EDFCC5002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F362F2FA-B6EB-45EA-9B82-231EDFCC5002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F362F2FA-B6EB-45EA-9B82-231EDFCC5002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1335FE28-7663-4149-9B31-12A49C80084F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1335FE28-7663-4149-9B31-12A49C80084F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1335FE28-7663-4149-9B31-12A49C80084F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1335FE28-7663-4149-9B31-12A49C80084F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4726D18D-BDA8-4737-96CE-59C2A27FCDCF} = {EFACFB8D-0E9D-4DCE-9D57-188BE6BC6338}
+		{717A15C4-E884-4D2F-BC77-19E75340C22B} = {EFACFB8D-0E9D-4DCE-9D57-188BE6BC6338}
+		{4D4FBB70-FBBC-47FA-9B5F-C82F63D4B0DF} = {096B6610-17A6-4EDB-A720-3F1BFAFD5D8F}
+		{123569C5-1625-438B-9C1F-03D570FA5CE0} = {096B6610-17A6-4EDB-A720-3F1BFAFD5D8F}
+		{22B35C3C-3528-4776-BC6A-F151FE8CC1A0} = {81661DCC-9004-41D3-A4C1-5F2D1CD55C9E}
+		{F362F2FA-B6EB-45EA-9B82-231EDFCC5002} = {C847A640-0724-4E43-8542-0A62B8F2951B}
+		{1335FE28-7663-4149-9B31-12A49C80084F} = {6B389491-C4F3-4678-AB87-CA17ED55C454}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ABC4C26-9AB4-4735-8E05-7901E32106D0}
+	EndGlobalSection
+EndGlobal
