@@ -18,7 +18,7 @@ namespace Cashbot.Infra.Data.Seed
             {
                 var dealer = new Dealer("master", "000.000.000-00", "master@grupoboticario.com.br", "teste@123");
                 _context.Dealers.Add(dealer);
-                _context.SaveChanges();
+                _context.SaveChanges(); 
             }
         }
     }
