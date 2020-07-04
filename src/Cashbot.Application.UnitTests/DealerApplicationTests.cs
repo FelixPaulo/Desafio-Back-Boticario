@@ -31,7 +31,7 @@ namespace Cashbot.Application.UnitTests
             _notifications = new Mock<ApplicationNotificationHandler>();
             _httpContextAccessor = new Mock<IHttpContextAccessor>();
             _dealerRepository = new Mock<IDealerRepository>();
-
+             
             var mockMapper = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new MappingProfile());
