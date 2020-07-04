@@ -18,5 +18,6 @@ e-mail: master@grupoboticario.com.br
 senha: teste@123
 
 após isso o sistema irá gerar um token ai é só adicionar o token gerado no swagger como o exemplo abaixo
+
 Bearer <token>
  
