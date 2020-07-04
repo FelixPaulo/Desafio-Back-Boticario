@@ -14,10 +14,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
-using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
-using Pomelo.EntityFrameworkCore.MySql.Storage;
-using System;
-using System.Collections.Generic;
 
 namespace Cashbot.Services.Api
 {
@@ -40,8 +36,7 @@ namespace Cashbot.Services.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<CachbotContext>(o => o.UseMySql(Configuration.GetConnectionString("DefaultConnection"),
-                                                   builder => builder.ServerVersion(new ServerVersion(new Version(10, 4, 6), ServerType.MariaDb))));
+            services.AddDbContext<CachbotContext>(o => o.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddTransient<DealerSeed>();
 
             services.AddSecurity(Configuration);

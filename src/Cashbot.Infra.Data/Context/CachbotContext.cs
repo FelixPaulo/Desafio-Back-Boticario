@@ -1,5 +1,6 @@
 ﻿using Cashbot.Domain.Models;
 using Cashbot.Infra.Data.Mappings;
+using Cashbot.Infra.Data.Seed;
 using Microsoft.EntityFrameworkCore;
 
 namespace Cashbot.Infra.Data.Context

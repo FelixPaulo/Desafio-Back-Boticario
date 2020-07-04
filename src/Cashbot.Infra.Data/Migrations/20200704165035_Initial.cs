@@ -1,5 +1,4 @@
 ﻿using System;
-using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Cashbot.Infra.Data.Migrations
@@ -13,7 +12,7 @@ namespace Cashbot.Infra.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(maxLength: 150, nullable: false),
                     Cpf = table.Column<string>(maxLength: 15, nullable: false),
                     Email = table.Column<string>(maxLength: 150, nullable: false),
@@ -29,11 +28,12 @@ namespace Cashbot.Infra.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Code = table.Column<string>(maxLength: 150, nullable: false),
-                    DealerId = table.Column<int>(nullable: false),
+                    Status = table.Column<string>(maxLength: 50, nullable: false),
                     Value = table.Column<double>(nullable: false),
-                    Date = table.Column<DateTime>(nullable: false)
+                    Date = table.Column<DateTime>(nullable: false),
+                    DealerId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

@@ -17,15 +17,6 @@ namespace Cashbot.Domain.Models
             this.Password = password;
         }
 
-        public Dealer(int id, string name, string cpf, string email, string password)
-        {
-            this.Id = id;
-            this.Name = name;
-            this.Cpf = cpf;
-            this.Email = email;
-            this.Password = password;
-        }
-
         public int Id { get; private set; }
         public string Name { get; private set; }
         public string Cpf { get; private set; }
